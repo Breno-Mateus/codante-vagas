@@ -3,23 +3,23 @@ import { cn } from "@/lib/utils";
 
 export default function NotFound() {
   return (
-    <main className="py-10 text-center">
-      <h1 className="font-display text-5xl font-bold text-gray-700">
+    <main className="w-full py-10 text-center">
+      <h1 className="font-display text-4xl font-bold text-gray-700">
         Nada encontrado aqui...
       </h1>
       <img
         src="/cone.png"
-        alt="Imagem de um barco afundando"
-        className="mx-auto mt-10 w-lg"
+        alt="Dois cones interligados com fita de isolamento"
+        className="mx-auto mt-10 w-xs"
       />
-      <p className="text-3xl font-light text-gray-500">
+      <p className="text-2xl font-light text-gray-500">
         Não foi possível encontrar a página solicitada.
       </p>
       <a
-        href="/" 
+        href="/"
         className={cn(
           buttonVariants({ variant: "default" }),
-          "mt-12 px-6 py-8 text-lg",
+          "mt-6",
         )}
       >
         Voltar à Home
