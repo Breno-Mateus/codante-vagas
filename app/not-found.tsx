@@ -1,5 +1,8 @@
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
+import coneImage from "@/public/cone.png";
+import Image from "next/image";
 
 export default function NotFound() {
   return (
@@ -7,15 +10,15 @@ export default function NotFound() {
       <h1 className="font-display text-4xl font-bold text-gray-700">
         Nada encontrado aqui...
       </h1>
-      <img
-        src="/cone.png"
+      <Image
+        src={coneImage}
         alt="Dois cones interligados com fita de isolamento"
         className="mx-auto mt-10 w-xs"
       />
       <p className="text-2xl font-light text-gray-500">
         Não foi possível encontrar a página solicitada.
       </p>
-      <a
+      <Link
         href="/"
         className={cn(
           buttonVariants({ variant: "default" }),
@@ -23,7 +26,7 @@ export default function NotFound() {
         )}
       >
         Voltar à Home
-      </a>
+      </Link>
     </main>
   );
 }

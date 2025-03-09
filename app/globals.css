@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
-
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
@@ -78,7 +76,7 @@
 }
 
 @theme inline {
-  --font-display: 'Maven pro', cursive;
+  --font-display: var(--font-mave-pro), cursive;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
